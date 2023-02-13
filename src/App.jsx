@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Navbar />
-        <Routes>
-          <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
-        </Routes>
+        {/* <Navbar /> */}
+        <Route>
+          <Route path='/' element={<Home/>} />
+          <Route path='/services' element={<Services/>} />
+          <Route path='/products' element={<Products/>} />
+          <Route path='/sign-up' element={<SignUp/>} />
+        </Route>
       </Routes>
     </>
   );
